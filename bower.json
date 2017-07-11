@@ -1,0 +1,17 @@
+{
+    "name": "fs-angular-toggle",
+    "description": "",
+    "main": [
+        "dist/toggle.js",
+        "dist/toggle.css"
+    ],
+    "authors": [
+        "Firestitch Inc."
+    ],
+    "license": "MIT",
+    "ignore": [
+        "src",
+        ".gitignore"
+    ],
+    "private": false
+}
