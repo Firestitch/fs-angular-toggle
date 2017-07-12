@@ -5,6 +5,10 @@
         "dist/toggle.js",
         "dist/toggle.css"
     ],
+    "dependencies": {
+        "fs-angular-theme": "^1.0.0",
+        "fs-boilerplate-styles": "^1.0.0"
+    },
     "authors": [
         "Firestitch Inc."
     ],

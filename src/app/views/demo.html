@@ -1,1 +1,33 @@
-<fs-toggle></fs-toggle>
+<fs-toggle-container class="md-block">
+	<label>Single Select</label>
+	<fs-toggle fs-model="selected" fs-width="100">
+		<fs-toggle-option fs-value="item" ng-repeat="item in list">
+			{{item.name}}
+		</fs-toggle-option>
+	</fs-toggle>
+	<div class="hint">Hint hint hint</div>
+</fs-toggle-container>
+
+<p>Selected: {{selected}}</p>
+
+<fs-toggle-container class="md-block">
+	<label>Multi-Select</label>
+	<fs-toggle fs-model="selectedMultiple" fs-multiple="true">
+		<fs-toggle-option fs-value="item" ng-repeat="item in list">{{item.name}}</fs-toggle-option>
+	</fs-toggle>
+	<div class="hint">Hint hint hint</div>
+</fs-toggle-container>
+
+<p>Selected: {{selectedMultiple}}</p>
+
+<fs-toggle-container class="md-block">
+	<label>Icon example</label>
+	<fs-toggle fs-model="selectedIcon" fs-width="100">
+		<fs-toggle-option fs-value="item" ng-repeat="item in list" fs-icon="{{item.icon}}">
+			{{item.name}}
+		</fs-toggle-option>
+	</fs-toggle>
+	<div class="hint">Hint hint hint</div>
+</fs-toggle-container>
+
+<p>Selected: {{selectedIcon}}</p>

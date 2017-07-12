@@ -5,9 +5,12 @@ angular
     'config',
     'ui.router',
     'ngMaterial',
-    'fs-angular-toggle'
+    'fs-angular-toggle',
+    'fs-angular-theme'
 ])
-.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+.config(function ($stateProvider, $urlRouterProvider, $locationProvider, fsThemeProvider) {
+
+	fsThemeProvider.options({ primary: '4678AE', accent: '4678AE' });
 
     $locationProvider.html5Mode(true);
     $urlRouterProvider

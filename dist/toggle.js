@@ -1,3 +1,4 @@
+
 (function () {
     'use strict';
 
@@ -81,3 +82,12 @@
         };
     });
 })();
+
+angular.module('fs-angular-toggle').run(['$templateCache', function($templateCache) {
+  'use strict';
+
+  $templateCache.put('views/directives/toggle.html',
+    "fs-angular template"
+  );
+
+}]);
